@@ -1,0 +1,91 @@
+{
+  "name": "claude-plugins-marketplace",
+  "owner": {
+    "name": "Claude Plugins Team",
+    "email": "plugins@claude.code"
+  },
+  "metadata": {
+    "description": "A curated collection of Claude Code plugins for enhancing productivity and enabling specialized workflows",
+    "version": "1.1.0",
+    "pluginRoot": "./plugins",
+    "repository": "https://github.com/your-org/claude-plugins-marketplace"
+  },
+  "plugins": [
+    {
+      "name": "product-manager-suite",
+      "displayName": "Product Manager Suite",
+      "description": "A comprehensive toolkit for Product Managers with intelligent agents and specialized skills for research, planning, documentation, and delivery. Features 19 skills including competitor research, PRD writing, A/B testing, form optimization, and performance optimization.",
+      "version": "1.2.0",
+      "author": {
+        "name": "Wolly",
+        "email": "xiang.xu@goland.cn"
+      },
+      "source": "./plugins/product-manager-suite",
+      "documentation": "./plugins/product-manager-suite/README.md",
+      "category": "product-management",
+      "tags": ["product-management", "prd", "research", "analytics", "growth", "optimization"],
+      "keywords": ["product-manager", "prd", "competitor-research", "ab-testing", "growth-optimization"],
+      "targetUsers": ["Product Managers", "Marketing Ops", "Growth Teams"],
+      "hasAgent": true,
+      "agentName": "pm-lead",
+      "skillCount": 19,
+      "commandCount": 5,
+      "license": "UNLICENSED",
+      "requirements": {
+        "minClaudeVersion": "1.0.33"
+      }
+    },
+    {
+      "name": "agentic-dev",
+      "displayName": "Agentic Dev",
+      "description": "Agent-driven project lifecycle methodology. Provides requirements analysis, architecture design, task splitting, development execution, weekly reports, and NotebookLM document optimization. Supports 3 Phase Model (Requirements → Design → Development).",
+      "version": "1.0.5",
+      "author": {
+        "name": "agentic-dev Team"
+      },
+      "source": "./plugins/agentic-dev",
+      "documentation": "./plugins/agentic-dev/README.md",
+      "category": "methodology",
+      "tags": ["methodology", "project-management", "development", "ai-assisted"],
+      "keywords": ["requirements", "architecture", "development", "ai-assisted"],
+      "targetUsers": ["Engineering Teams", "Project Managers"],
+      "hasAgent": false,
+      "skillCount": 8,
+      "commandCount": 3,
+      "license": "MIT",
+      "requirements": {
+        "minClaudeVersion": "1.0.33"
+      }
+    },
+    {
+      "name": "dch",
+      "displayName": "DCH (Dev Context Hub)",
+      "description": "Dev Context Hub - Unified development context management. Search documents, query GitLab, export Feishu docs, and manage context. Integrates with dch CLI tool.",
+      "version": "1.0.6",
+      "author": {
+        "name": "DCH Team"
+      },
+      "source": "./plugins/dch",
+      "documentation": "./plugins/dch/README.md",
+      "repository": "http://10.10.2.124/dch/dch-tools",
+      "category": "development",
+      "tags": ["context", "documentation", "gitlab", "feishu", "search"],
+      "keywords": ["context-management", "documentation", "gitlab", "feishu"],
+      "targetUsers": ["Developers", "DevOps"],
+      "hasAgent": false,
+      "skillCount": 6,
+      "commandCount": 3,
+      "license": "MIT",
+      "externalDependencies": [
+        {
+          "name": "dch",
+          "installCommand": "pip install dch",
+          "minVersion": "0.1.0"
+        }
+      ],
+      "requirements": {
+        "minClaudeVersion": "1.0.33"
+      }
+    }
+  ]
+}

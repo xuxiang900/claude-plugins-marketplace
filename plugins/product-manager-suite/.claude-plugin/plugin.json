@@ -1,0 +1,40 @@
+{
+  "name": "product-manager-suite",
+  "version": "1.2.0",
+  "description": "A comprehensive toolkit for Product Managers with intelligent agents and specialized skills for research, planning, documentation, and delivery",
+  "author": {
+  	"name": "Wolly",
+  	"email": "xiang.xu@goland.cn"
+  },
+  "agents": [
+    "./agents/pm-lead/AGENT.md"
+  ],
+  "skills": [
+    "./skills/ab-test-designer/SKILL.md",
+    "./skills/bdd-feature-writer/SKILL.md",
+    "./skills/bdd-spec-analyzer/SKILL.md",
+    "./skills/campaign-strategist/SKILL.md",
+    "./skills/competitor-research/SKILL.md",
+    "./skills/data-analysis/SKILL.md",
+    "./skills/form-designer/SKILL.md",
+    "./skills/growth-web-architect/SKILL.md",
+    "./skills/performance-optimizer/SKILL.md",
+    "./skills/prd-auditor/SKILL.md",
+    "./skills/prd-writer/SKILL.md",
+    "./skills/rice-scorer/SKILL.md",
+    "./skills/roadmap-visualizer/SKILL.md",
+    "./skills/search-experience-designer/SKILL.md",
+    "./skills/solution-architect/SKILL.md",
+    "./skills/user-insight-miner/SKILL.md",
+    "./skills/user-journey-mapper/SKILL.md",
+    "./skills/user-story-generator/SKILL.md",
+    "./skills/api-spec-writer/SKILL.md"
+  ],
+  "commands": [
+    "./commands/research-market.md",
+    "./commands/write-prd.md",
+    "./commands/analyze-competitor.md",
+    "./commands/plan-sprint.md",
+    "./commands/score-requirements.md"
+  ]
+}
