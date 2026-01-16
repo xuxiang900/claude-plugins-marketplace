@@ -32,7 +32,7 @@ AUTHOR_NAME = "Your Name"
 PROJECT_ROOT = Path(__file__).parent.parent
 
 # 集中仓库路径（与项目同级）
-CENTRAL_REPO = PROJECT_ROOT.parent / "claude-code-plugins"
+CENTRAL_REPO = PROJECT_ROOT.parent / "pm-plugin-marketplace"
 
 
 def generate_plugin_json():

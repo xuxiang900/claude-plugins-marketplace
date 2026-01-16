@@ -17,7 +17,7 @@ updated: "2026-01-09"
 
 ```bash
 # 1. 添加远程 Marketplace（仅需执行一次）
-/plugin marketplace add https://localesgit.dvdfab.cn/agent/claude-code-plugins.git
+/plugin marketplace add https://github.com/dvdfab/pm-plugin-marketplace.git
 
 # 2. 从 Marketplace 安装 Plugin
 /plugin install <plugin-name>@agent-lab
@@ -36,12 +36,12 @@ updated: "2026-01-09"
 
 ```bash
 # 1. Clone Marketplace 仓库（仅需执行一次）
-git clone https://localesgit.dvdfab.cn/agent/claude-code-plugins.git
+git clone https://github.com/dvdfab/pm-plugin-marketplace.git
 # 如果 HTTPS 无法访问，使用内网 HTTP 地址：
-# git clone http://10.10.2.124/agent/claude-code-plugins.git
+# git clone http://10.10.2.124/agent/pm-plugin-marketplace.git
 
 # 2. 添加本地 Marketplace（仅需执行一次）
-/plugin marketplace add /path/to/claude-code-plugins
+/plugin marketplace add /path/to/pm-plugin-marketplace
 
 # 3. 从 Marketplace 安装 Plugin
 /plugin install <plugin-name>@agent-lab
@@ -59,7 +59,7 @@ python scripts/build_plugin.py
 /plugin install <plugin-name>
 
 # 或者从集中仓库本地路径安装
-/plugin marketplace add /path/to/claude-code-plugins
+/plugin marketplace add /path/to/pm-plugin-marketplace
 /plugin install <plugin-name>@agent-lab
 ```
 

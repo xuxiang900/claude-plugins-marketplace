@@ -62,7 +62,7 @@ Product Manager Suite is a comprehensive collection of intelligent agents and sp
 ```bash
 # Clone the plugin
 # Option A: If you have a Git repo for this plugin
-/plugin install your-org/product-manager-suite
+/plugin install dvdfab/product-manager-suite
 
 # Option B: Install from local path for testing
 /plugin install ./product-manager-suite
@@ -72,7 +72,7 @@ Product Manager Suite is a comprehensive collection of intelligent agents and sp
 Add to your project's `.claude/settings.json`:
 ```json
 {
-  "marketplaces": ["your-org/pm-plugins"],
+  "marketplaces": ["dvdfab/pm-plugins"],
   "plugins": {
     "product-manager-suite": {
       "enabled": true,
@@ -329,7 +329,7 @@ Edit `.claude-plugin/plugin.json` to customize:
 Create `.claude/settings.json` in your project:
 ```json
 {
-  "marketplaces": ["your-org/pm-marketplace"],
+  "marketplaces": ["dvdfab/pm-plugin-marketplace"],
   "plugins": {
     "product-manager-suite": {
       "enabled": true,
@@ -390,7 +390,7 @@ git push origin main --tags
 2. **Team Installation**
 ```bash
 # Each team member runs:
-/plugin install your-org/product-manager-suite
+/plugin install dvdfab/product-manager-suite
 ```
 
 3. **Repository Integration**
@@ -398,7 +398,7 @@ Add to project's `.claude/settings.json` to auto-enable for everyone:
 ```json
 {
   "plugins": {
-    "product-manager-suite@your-org": {
+    "product-manager-suite@dvdfab": {
       "enabled": true,
       "version": "^1.2.0"
     }

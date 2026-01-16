@@ -8,7 +8,7 @@ A curated collection of Claude Code plugins for enhancing productivity and enabl
 
 ```bash
 # 1. Add Marketplace (one-time setup)
-/plugin marketplace add https://github.com/your-org/claude-plugins-marketplace
+/plugin marketplace add https://github.com/dvdfab/pm-plugin-marketplace
 
 # 2. Install plugins
 /plugin install product-manager-suite
@@ -20,10 +20,10 @@ A curated collection of Claude Code plugins for enhancing productivity and enabl
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-org/claude-plugins-marketplace.git
+git clone https://github.com/dvdfab/pm-plugin-marketplace.git
 
 # 2. Add local marketplace
-/plugin marketplace add /path/to/claude-plugins-marketplace
+/plugin marketplace add /path/to/pm-plugin-marketplace
 
 # 3. Install plugins
 /plugin install product-manager-suite
@@ -98,7 +98,7 @@ git clone https://github.com/your-org/claude-plugins-marketplace.git
 ## 📁 Repository Structure
 
 ```
-claude-plugins-marketplace/
+pm-plugin-marketplace/
 ├── .claude-plugin/
 │   └── marketplace.json    # Marketplace metadata and plugin index
 ├── plugins/                # Plugin directories

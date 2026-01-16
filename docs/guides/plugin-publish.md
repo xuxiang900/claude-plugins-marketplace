@@ -26,7 +26,7 @@ Projects/
 │   ├── scripts/build_plugin.py
 │   └── build/plugin/
 │
-└── claude-code-plugins/            # 集中分发仓库（Marketplace）
+└── pm-plugin-marketplace/          # 集中分发仓库（Marketplace）
     ├── .claude-plugin/
     │   └── marketplace.json        # Marketplace 配置
     ├── plugins/
@@ -62,13 +62,13 @@ python scripts/build_plugin.py --publish
 
 # 方式 2: 分步执行
 python scripts/build_plugin.py          # 仅构建
-# 手动复制 build/plugin/ 到 claude-code-plugins/plugins/agentic-dev/
+# 手动复制 build/plugin/ 到 pm-plugin-marketplace/plugins/agentic-dev/
 ```
 
 ### 2.3 提交到集中仓库
 
 ```bash
-cd /path/to/claude-code-plugins
+cd /path/to/pm-plugin-marketplace
 git add .
 git commit -m "chore: update agentic-dev to v1.x.x"
 git push origin main
@@ -125,13 +125,13 @@ cd /path/to/my-project
 python scripts/build_plugin.py
 
 # 2. 复制到集中仓库
-cp -r build/plugin /path/to/claude-code-plugins/plugins/my-plugin
+cp -r build/plugin /path/to/pm-plugin-marketplace/plugins/my-plugin
 
 # 3. 更新 Marketplace
-# 编辑 claude-code-plugins/.claude-plugin/marketplace.json，添加新条目
+# 编辑 pm-plugin-marketplace/.claude-plugin/marketplace.json，添加新条目
 
 # 4. 提交
-cd /path/to/claude-code-plugins
+cd /path/to/pm-plugin-marketplace
 git add .
 git commit -m "feat: add my-plugin"
 git push origin main
@@ -213,10 +213,10 @@ Marketplace 仓库需要部署到可访问的位置。添加方式：
 
 ```bash
 # 1. Clone Marketplace 仓库
-git clone http://10.10.2.124/agent/claude-code-plugins.git
+git clone http://10.10.2.124/agent/pm-plugin-marketplace.git
 
 # 2. 从本地路径添加（推荐）
-/plugin marketplace add /path/to/claude-code-plugins
+/plugin marketplace add /path/to/pm-plugin-marketplace
 ```
 
 > **Note**: Claude Code `/plugin marketplace add` 支持的格式：
@@ -327,7 +327,7 @@ Agent 详细指令...
 ### 集中仓库结构（Marketplace）
 
 ```
-claude-code-plugins/
+pm-plugin-marketplace/
 ├── .claude-plugin/
 │   └── marketplace.json        # Marketplace 配置
 ├── plugins/

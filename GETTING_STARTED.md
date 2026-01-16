@@ -1,4 +1,4 @@
-# Getting Started with Claude Plugins Marketplace
+# Getting Started with PM Plugin Marketplace
 
 Complete guide for users and developers to start using and contributing to this plugin marketplace.
 
@@ -15,7 +15,7 @@ Complete guide for users and developers to start using and contributing to this 
 
 ```bash
 # Add the marketplace (one-time setup)
-/plugin marketplace add https://github.com/your-org/claude-plugins-marketplace
+/plugin marketplace add https://github.com/dvdfab/pm-plugin-marketplace
 
 # Install individual plugins
 /plugin install product-manager-suite
@@ -27,10 +27,10 @@ Complete guide for users and developers to start using and contributing to this 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/claude-plugins-marketplace.git
+git clone https://github.com/dvdfab/pm-plugin-marketplace.git
 
 # Add as local marketplace
-/plugin marketplace add /path/to/claude-plugins-marketplace
+/plugin marketplace add /path/to/pm-plugin-marketplace
 
 # Install plugins
 /plugin install product-manager-suite
@@ -44,7 +44,7 @@ Create `.claude/settings.json` in your project:
 
 ```json
 {
-  "marketplaces": ["your-org/claude-plugins-marketplace"],
+  "marketplaces": ["dvdfab/claudeaude-plsugins-marketplace"],
   "plugins": {
     "product-manager-suite": {
       "enabled": true,
@@ -177,8 +177,8 @@ Create `.claude/settings.json` in your project:
 
 ```bash
 # Clone the marketplace repository
-git clone https://github.com/your-org/claude-plugins-marketplace.git
-cd claude-plugins-marketplace
+git clone https://github.com/dvdfab/pm-plugin-marketplace.git
+cd pm-plugin-marketplace
 
 # Install Claude Code if not already installed
 # (Follow instructions from https://claude.ai/code)
@@ -338,7 +338,7 @@ cp -r my-plugin plugins/
 # Add plugin to available plugins table
 
 # 4. Test marketplace installation
-/plugin marketplace add /path/to/claude-plugins-marketplace
+/plugin marketplace add /path/to/pm-plugin-marketplace
 /plugin install my-plugin
 
 # 5. Commit and push

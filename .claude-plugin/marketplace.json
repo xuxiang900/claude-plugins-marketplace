@@ -1,14 +1,14 @@
 {
-  "name": "claude-plugins-marketplace",
+  "name": "pm-plugin-marketplace",
   "owner": {
-    "name": "Claude Plugins Team",
-    "email": "plugins@claude.code"
+    "name": "PM Plugins Team",
+    "email": "plugins@pm.code"
   },
   "metadata": {
-    "description": "A curated collection of Claude Code plugins for enhancing productivity and enabling specialized workflows",
+    "description": "A curated collection of plugins for enhancing productivity and enabling specialized workflows",
     "version": "1.1.0",
     "pluginRoot": "./plugins",
-    "repository": "https://github.com/your-org/claude-plugins-marketplace"
+    "repository": "https://github.com/dvdfab/pm-plugin-marketplace"
   },
   "plugins": [
     {
