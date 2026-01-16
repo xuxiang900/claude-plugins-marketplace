@@ -15,6 +15,7 @@
 mkdir -p .claude
 cat > .claude/settings.json << 'EOF'
 {
+  "marketplaces": ["dvdfab/pm-plugin-marketplace"],
   "plugins": {
     "product-manager-suite": {
       "path": "./product-manager-suite",

@@ -72,7 +72,7 @@ Product Manager Suite is a comprehensive collection of intelligent agents and sp
 Add to your project's `.claude/settings.json`:
 ```json
 {
-  "marketplaces": ["dvdfab/pm-plugins"],
+  "marketplaces": ["dvdfab/pm-plugin-marketplace"],
   "plugins": {
     "product-manager-suite": {
       "enabled": true,
