@@ -14,7 +14,7 @@
     {
       "name": "product-manager-suite",
       "description": "A comprehensive toolkit for Product Managers with intelligent agents and specialized skills for research, planning, documentation, and delivery. Features 19 skills including competitor research, PRD writing, A/B testing, form optimization, and performance optimization.",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "author": {
         "name": "Wolly",
         "email": "xiang.xu@goland.cn"

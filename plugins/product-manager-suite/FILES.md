@@ -19,7 +19,7 @@ product-manager-suite/
 │   ├── score-requirements.md              # 优先级评分命令
 │   └── plan-sprint.md                     # 冲刺规划命令
 │
-├── 🛠️ skills/                             # 专业技能（19个）
+├── 🛠️ skills/                             # 专业技能（20个）
 │   ├── ab-test-designer/                  # A/B测试方案设计 **[NEW]**
 │   ├── api-spec-writer/
 │   ├── bdd-feature-writer/
@@ -27,6 +27,7 @@ product-manager-suite/
 │   ├── campaign-strategist/
 │   ├── competitor-research/
 │   ├── data-analysis/
+│   ├── feishu-skill/                      # 飞书文档转Markdown **[NEW]**
 │   ├── form-designer/                     # 表单转化率优化 **[NEW]**
 │   ├── growth-web-architect/
 │   ├── performance-optimizer/             # 网站性能优化 **[NEW]**
@@ -53,9 +54,9 @@ product-manager-suite/
 
 ## 📊 统计
 
-- **Total Files**: ~80+
+- **Total Files**: ~85+
 - **Agent**: 1个 (pm-lead)
-- **Skills**: 19个（新增4个）
+- **Skills**: 20个（新增5个）
 - **Commands**: 5个
 - **Documentation**: 6个（新增3个工作流指南）
 

@@ -15,7 +15,6 @@
 mkdir -p .claude
 cat > .claude/settings.json << 'EOF'
 {
-  "marketplaces": ["dvdfab/pm-plugin-marketplace"],
   "plugins": {
     "product-manager-suite": {
       "path": "./product-manager-suite",
@@ -36,7 +35,7 @@ EOF
 1. 将此插件推送到Git仓库
 2. 团队成员安装：
 ```bash
-/plugin install dvdfab/product-manager-suite
+/plugin install your-org/product-manager-suite
 ```
 
 ## 验证安装

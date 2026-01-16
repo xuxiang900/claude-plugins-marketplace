@@ -6,7 +6,7 @@ allowed_tools: [
   "ReadFile", "WriteFile", "ListDir", "Bash",
   "ab-test-designer", "bdd-feature-writer", "bdd-spec-analyzer",
   "campaign-strategist", "competitor-research", "data-analysis",
-  "form-designer", "growth-web-architect", "prd-auditor", "prd-writer",
+  "feishu-skill", "form-designer", "growth-web-architect", "prd-auditor", "prd-writer",
   "rice-scorer", "roadmap-visualizer", "solution-architect",
   "user-insight-miner", "user-journey-mapper", "user-story-generator",
   "api-spec-writer"
@@ -94,6 +94,12 @@ allowed_tools: [
 * **`data-analysis`** (数据炼金术师)
 * **用途:** 清洗结构化数据（CSV/JSON），进行异常检测、趋势分析和 Mermaid 可视化。
 * **场景:** 需要量化验证假设或分析指标下跌原因时。
+
+* **`feishu-skill`** (飞书文档处理器) **[NEW]**
+    * **用途:** 将飞书文档转换为 Markdown 格式，自动下载文档内容和图片资源到指定目录。
+    * **触发场景:** 当用户提供飞书文档链接并需要提取或转换内容时调用。
+    * **核心能力:** 支持 URL 或文档 Token 输入,自动下载 Markdown 文件和图片资源,输出文件路径供后续步骤使用。
+    * **工作流程:** 用户发送飞书链接 → `feishu-skill` 转换并下载 → 输出路径 → 读取/处理 Markdown 文件 → 继续后续工作流（如 `prd-writer`、`user-story-generator` 等）。
 
 ### 2. 📝 定义与落地 (Definition & Documentation)
 
@@ -217,6 +223,9 @@ allowed_tools: [
 
 ### 🔄 组合 H：网页优化专项 (Web Optimization) **[NEW]**
 > `competitor-research` (竞品页面分析) → `growth-web-architect` (页面架构设计) → `form-designer` (表单转化优化) → `a/b-test-designer` (测试验证) → `prd-writer` (完整方案)
+
+### 🔄 组合 I：飞书文档转PRD流 (Feishu to PRD) **[NEW]**
+> `feishu-skill` (提取飞书文档) → `prd-writer` (生成PRD草稿) → `prd-auditor` (逻辑检查) → `prd-writer` (优化修改) → **交付**
 
 ---
 

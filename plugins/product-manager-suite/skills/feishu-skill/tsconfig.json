@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "feishu-docx": ["../feishu-docx/src/index.ts"],
+      "feishu-pages": ["../feishu-pages/src/index.ts"]
+    }
+  },
+  "include": ["scripts/**/*", "../feishu-pages/src/**/*", "../feishu-docx/src/**/*"]
+}

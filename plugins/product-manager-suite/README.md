@@ -62,7 +62,7 @@ Product Manager Suite is a comprehensive collection of intelligent agents and sp
 ```bash
 # Clone the plugin
 # Option A: If you have a Git repo for this plugin
-/plugin install dvdfab/product-manager-suite
+/plugin install your-org/product-manager-suite
 
 # Option B: Install from local path for testing
 /plugin install ./product-manager-suite
@@ -72,7 +72,7 @@ Product Manager Suite is a comprehensive collection of intelligent agents and sp
 Add to your project's `.claude/settings.json`:
 ```json
 {
-  "marketplaces": ["dvdfab/pm-plugin-marketplace"],
+  "marketplaces": ["your-org/pm-plugins"],
   "plugins": {
     "product-manager-suite": {
       "enabled": true,
@@ -329,7 +329,7 @@ Edit `.claude-plugin/plugin.json` to customize:
 Create `.claude/settings.json` in your project:
 ```json
 {
-  "marketplaces": ["dvdfab/pm-plugin-marketplace"],
+  "marketplaces": ["your-org/pm-marketplace"],
   "plugins": {
     "product-manager-suite": {
       "enabled": true,
@@ -390,7 +390,7 @@ git push origin main --tags
 2. **Team Installation**
 ```bash
 # Each team member runs:
-/plugin install dvdfab/product-manager-suite
+/plugin install your-org/product-manager-suite
 ```
 
 3. **Repository Integration**
@@ -398,7 +398,7 @@ Add to project's `.claude/settings.json` to auto-enable for everyone:
 ```json
 {
   "plugins": {
-    "product-manager-suite@dvdfab": {
+    "product-manager-suite@your-org": {
       "enabled": true,
       "version": "^1.2.0"
     }
@@ -445,7 +445,18 @@ product-manager-suite/
 
 ## 📊 Version History
 
-### v1.2.0 (Current)
+### v1.3.0 (Current)
+**Major Update: Integration with Collaboration Tools**
+- ✅ Added `feishu-skill` - Convert Feishu/Lark documents to Markdown format:
+  - Support for both document URLs and direct tokens
+  - Automatic download of Markdown files and image assets
+  - Integration with subsequent workflow steps (PRD generation, user stories)
+- ✅ Enhanced agent orchestration with new tactical combination:
+  - **Feishu to PRD Flow**: `feishu-skill` → `prd-writer` → `prd-auditor` → `prd-writer` → Delivery
+- ✅ Updated all workflow guides with Feishu integration examples
+- ✅ Total skills: 20 (from 19 in v1.2.0)
+
+### v1.2.0
 **Major Update: Expanded for Growth & Marketing Operations**
 - ✅ Added 4 new skills:
   - `form-designer` - Form conversion optimization

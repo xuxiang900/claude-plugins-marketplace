@@ -1,6 +1,6 @@
 {
   "name": "product-manager-suite",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A comprehensive toolkit for Product Managers with intelligent agents and specialized skills for research, planning, documentation, and delivery",
   "author": {
   	"name": "Wolly",
@@ -16,6 +16,7 @@
     "./skills/campaign-strategist/SKILL.md",
     "./skills/competitor-research/SKILL.md",
     "./skills/data-analysis/SKILL.md",
+    "./skills/feishu-skill/SKILL.md",
     "./skills/form-designer/SKILL.md",
     "./skills/growth-web-architect/SKILL.md",
     "./skills/performance-optimizer/SKILL.md",
