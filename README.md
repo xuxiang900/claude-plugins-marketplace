@@ -12,8 +12,6 @@ A curated collection of Claude Code plugins for enhancing productivity and enabl
 
 # 2. Install plugins
 /plugin install product-manager-suite
-/plugin install agentic-dev
-/plugin install dch
 ```
 
 ### Install from Local Path
@@ -27,8 +25,6 @@ git clone https://github.com/dvdfab/pm-plugin-marketplace.git
 
 # 3. Install plugins
 /plugin install product-manager-suite
-/plugin install agentic-dev
-/plugin install dch
 ```
 
 ## 📦 Available Plugins
@@ -36,8 +32,6 @@ git clone https://github.com/dvdfab/pm-plugin-marketplace.git
 | Plugin | Version | Description | Target Users |
 |--------|---------|-------------|--------------|
 | [product-manager-suite](./plugins/product-manager-suite/) | 1.2.0 | Comprehensive product management toolkit with 19 skills including PRD writing, competitor research, A/B testing, and growth optimization | Product Managers, Marketing Ops, Growth Teams |
-| [agentic-dev](./plugins/agentic-dev/) | 1.0.5 | Agent-driven project lifecycle methodology supporting requirements analysis, architecture design, and development execution | Engineering Teams, Project Managers |
-| [dch](./plugins/dch/) | 1.0.6 | Dev Context Hub for document search, GitLab integration, and Feishu document management | Developers, DevOps |
 
 ### Plugin Details
 
@@ -47,25 +41,10 @@ git clone https://github.com/dvdfab/pm-plugin-marketplace.git
 - **5 Quick Commands**: `/research-market`, `/write-prd`, `/analyze-competitor`, `/score-requirements`, `/plan-sprint`
 - **3 Workflow Guides**: Website PM, Desktop PM, and Marketing Operations workflows
 
-#### Agentic Dev
-- **8 Skills**: Requirements analysis, architecture design, task splitting, development execution, weekly reports, and NotebookLM optimization
-- **3 Commands**: Worklist creation, tracking updates, and MR descriptions
-- **3-Phase Model**: Requirements → Design → Development execution
-- **Template Library**: Standardized templates for issues, worklists, and tracking
-
-#### DCH (Dev Context Hub)
-- **6 Skills**: Context management, document search, GitLab operations, Feishu integration, and indexing
-- **3 Commands**: Git commit formatting, change summaries, and index management
-- **CLI Integration**: Native integration with dch CLI tool
-
 ## 📖 Plugin Categories
 
 ### 🎯 Product Management
 - `product-manager-suite` - End-to-end product management
-
-### 💻 Development & Engineering
-- `agentic-dev` - AI-driven development methodology
-- `dch` - Development context and documentation management
 
 ### 📊 Analytics & Optimization
 - Built into `product-manager-suite`: A/B testing, performance optimization, data analysis
@@ -107,8 +86,6 @@ pm-plugin-marketplace/
 │   │   ├── agents/
 │   │   ├── commands/
 │   │   └── skills/
-│   ├── agentic-dev/
-│   └── dch/
 ├── docs/                   # Documentation
 │   ├── README.md
 │   ├── guides/

@@ -19,8 +19,6 @@ Complete guide for users and developers to start using and contributing to this 
 
 # Install individual plugins
 /plugin install product-manager-suite
-/plugin install agentic-dev
-/plugin install dch
 ```
 
 #### Method 2: From Local Clone
@@ -34,8 +32,6 @@ git clone https://github.com/dvdfab/pm-plugin-marketplace.git
 
 # Install plugins
 /plugin install product-manager-suite
-/plugin install agentic-dev
-/plugin install dch
 ```
 
 #### Method 3: Add to Team Configuration
@@ -70,8 +66,6 @@ Create `.claude/settings.json` in your project:
 
 # Check plugin details
 /plugin help product-manager-suite
-/plugin help agentic-dev
-/plugin help dch
 
 # Test a plugin command
 /research-market "AI assistants" "team productivity"
@@ -115,33 +109,11 @@ Create `.claude/settings.json` in your project:
 
 ```bash
 # Install development tools
-/plugin install agentic-dev
-/plugin install dch
-
-# Try agentic-dev workflows:
-
-# 1. Requirements Analysis (just describe what you need)
-"I need to add authentication to our API"
-
-# 2. Architecture Design
-"Design the system architecture for this feature"
-
-# 3. Task Splitting
-"Break down this feature into GitHub issues"
-
-# 4. Development Execution
-"Implement the user registration endpoint"
+# (Refer to contribution guide for creating new plugins)
+/plugin install product-manager-suite
 
 # Try DCH for context management:
-
-# 1. Search Documentation
-"Search for API authentication patterns in our docs"
-
-# 2. GitLab Operations
-"Show me recent MRs in dch-tools repository"
-
-# 3. Export Documents
-"Export this Feishu doc to markdown"
+# (Currently not available in this marketplace)
 ```
 
 ### For Marketing Operations
